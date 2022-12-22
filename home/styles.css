@@ -1,0 +1,3114 @@
+.mailkapsa{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+}
+.mailmessage{
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  width: 30%;
+  background: #fff;
+  font-family: "Big Caslon";
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 2%;
+}
+.mailmessage button{
+  border: none;
+  background: transparent;
+  color: red;
+  font-weight: bolder;
+  position: absolute;
+  right: 20;
+  top: 20;
+}
+.mailmessage i{
+  color: green;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.sayac{
+  overflow-x: hidden;
+}
+#btn{
+  transform: scale(1.6);
+  position: absolute;
+  left: 10%;
+  top: 42px;
+  z-index: 999 !important;
+  color: black;
+}
+#btn.active{
+  color: white;
+}
+#btn:hover{
+  color: crimson;
+  transition: all 1s ease-in;
+  cursor: pointer;
+}
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 15%;
+  top: 25px;
+  z-index: 1;
+  background-color: transparent;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #fff;
+  padding-right: 40px;
+  color:black;
+  background-color: transparent;
+}
+.input-search::placeholder{
+  color:rgba(0,0,0,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#000 ;
+  background-color:transparent;
+  pointer-events: painted;  
+  transition: all 1s ease-in;
+}
+.btn-search:hover{
+  color: crimson;
+  transition: all 1s ease-in;
+}
+.btn-search:focus ~ .input-search{
+  width: 350px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(0,0,0,.5);
+  transition: all 900ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 350px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(0,0,0,.5);
+  transition: all 900ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+#logo{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 17px;
+  cursor: pointer;
+}
+#logo label{
+  z-index: 999;
+  font-family: "Big Caslon";
+  font-size: 35px;
+  font-weight: lighter;
+  color: grey;
+  text-shadow: 1px 1px #000;
+}
+/**********************************************header*****************************/
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid #f5f0fe;
+}
+.bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #162a4b;
+  font-family: "Big Caslon";
+  transform: translateY(-200%);
+  transition: all 1s ease;
+  font-weight: bold;
+  z-index: 999;
+  overflow-x:hidden;
+  overflow-y:auto ;
+}
+.bar .menu{
+  position: absolute;
+  left: 10%;
+  z-index: 999;
+  margin-top: 5%;
+}
+.bar .menu2{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu4{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu5{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu6{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu7{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu8{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu9{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu10{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu11{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.bar .menu61{
+  position: absolute;
+  left: 30%;
+  background-color: #1c355e;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-250%);
+  opacity: 10;
+}
+.bar .menu61.active{
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu2.active{
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu4.active {
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu5.active {
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu6.active {
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu7.active {
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu8.active {
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu9.active {
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu10.active {
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu11.active {
+  transition: all 1.2s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+}
+.bar .menu34{
+  position: absolute;
+  left: 60%;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  background-color: #1e3966;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-250);
+  display: none;
+}
+.bar .menu39{
+  position: absolute;
+  left: 60%;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  background-color: #1e3966;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-250%);
+  display: none;
+}
+/*************************************subdiva*****************************************************/
+.bar .sanatcisubdiva ul,.bar .sanatcisubdivb ul,.bar .sanatcisubdivc ul,.bar .sanatcisubdivcc ul,
+.bar .sanatcisubdivd ul,.bar .sanatcisubdive ul,.bar .sanatcisubdivf ul,.bar .sanatcisubdivg ul,
+.bar .sanatcisubdivh ul,.bar .sanatcisubdivi ul,.bar .sanatcisubdivii ul,.bar .sanatcisubdivj ul,
+.bar .sanatcisubdivk ul,.bar .sanatcisubdivl ul,.bar .sanatcisubdivm ul,.bar .sanatcisubdivn ul,
+.bar .sanatcisubdivo ul,.bar .sanatcisubdivoo ul,.bar .sanatcisubdivp ul,.bar .sanatcisubdivr ul,
+.bar .sanatcisubdivq ul,.bar .sanatcisubdivs ul,.bar .sanatcisubdivss ul,.bar .sanatcisubdivt ul,
+.bar .sanatcisubdivu ul,.bar .sanatcisubdivuu ul,.bar .sanatcisubdivv ul,.bar .sanatcisubdivw ul,
+.bar .sanatcisubdivx ul,.bar .sanatcisubdivy ul,.bar .sanatcisubdivz ul{
+  list-style: none;
+  margin-left: 25%;
+  margin-top: 15%;
+  color: white;
+}
+.bar .sanatcisubdiva ul li button,.bar .sanatcisubdivb ul li button,.bar .sanatcisubdivc ul li button,
+.bar .sanatcisubdivcc ul li button,.bar .sanatcisubdivd ul li button,.bar .sanatcisubdive ul li button,
+.bar .sanatcisubdivf ul li button,.bar .sanatcisubdivg ul li button,.bar .sanatcisubdivh ul li button,
+.bar .sanatcisubdivi ul li button,.bar .sanatcisubdivii ul li button,.bar .sanatcisubdivj ul li button,
+.bar .sanatcisubdivk ul li button,.bar .sanatcisubdivl ul li button,.bar .sanatcisubdivm ul li button,
+.bar .sanatcisubdivn ul li button,.bar .sanatcisubdivo ul li button,.bar .sanatcisubdivoo ul li button,
+.bar .sanatcisubdivp ul li button,.bar .sanatcisubdivr ul li button,.bar .sanatcisubdivq ul li button,
+.bar .sanatcisubdivs ul li button,.bar .sanatcisubdivss ul li button,.bar .sanatcisubdivt ul li button,
+.bar .sanatcisubdivu ul li button,.bar .sanatcisubdivuu ul li button,.bar .sanatcisubdivv ul li button,
+.bar .sanatcisubdivw ul li button,.bar .sanatcisubdivx ul li button,.bar .sanatcisubdivy ul li button,
+.bar .sanatcisubdivz ul li button{
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+ border: none;
+ background-color: transparent;
+ width: 250px;
+ text-align: left;
+}
+.bar .sanatcisubdiva ul li,.bar .sanatcisubdivb ul li,.bar .sanatcisubdivc ul li,.bar .sanatcisubdivcc ul li,
+.bar .sanatcisubdivd ul li,.bar .sanatcisubdive ul li,.bar .sanatcisubdivf ul li,.bar .sanatcisubdivg ul li,
+.bar .sanatcisubdivh ul li,.bar .sanatcisubdivi ul li,.bar .sanatcisubdivii ul li,.bar .sanatcisubdivj ul li,
+.bar .sanatcisubdivk ul li,.bar .sanatcisubdivl ul li,.bar .sanatcisubdivm ul li,.bar .sanatcisubdivn ul li,
+.bar .sanatcisubdivo ul li,.bar .sanatcisubdivoo ul li,.bar .sanatcisubdivp ul li,.bar .sanatcisubdivr ul li,
+.bar .sanatcisubdivq ul li,.bar .sanatcisubdivs ul li,.bar .sanatcisubdivss ul li,.bar .sanatcisubdivt ul li,
+.bar .sanatcisubdivu ul li,.bar .sanatcisubdivuu ul li,.bar .sanatcisubdivv ul li,.bar .sanatcisubdivw ul li,
+.bar .sanatcisubdivx ul li,.bar .sanatcisubdivy ul li,.bar .sanatcisubdivz ul li{
+  margin-top: 10px;
+}
+.bar .sanatcisubdiva,.bar .sanatcisubdivb,.bar .sanatcisubdivc,.bar .sanatcisubdivcc,.bar .sanatcisubdivd,
+.bar .sanatcisubdive,.bar .sanatcisubdivf,.bar .sanatcisubdivg,.bar .sanatcisubdivh,.bar .sanatcisubdivi,
+.bar .sanatcisubdivii,.bar .sanatcisubdivj,.bar .sanatcisubdivk,.bar .sanatcisubdivl,.bar .sanatcisubdivm,
+.bar .sanatcisubdivn,.bar .sanatcisubdivo,.bar .sanatcisubdivoo,.bar .sanatcisubdivp,.bar .sanatcisubdivr,
+.bar .sanatcisubdivs,.bar .sanatcisubdivss,.bar .sanatcisubdivq,.bar .sanatcisubdivt,.bar .sanatcisubdivu,
+.bar .sanatcisubdivuu,.bar .sanatcisubdivv,.bar .sanatcisubdivw,.bar .sanatcisubdivx,.bar .sanatcisubdivy,
+.bar .sanatcisubdivz{
+  position: absolute;
+  left: 60%;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  background-color: #1e3966;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-250%);
+  display: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.bar .sanatcisubdiva.active,.bar .sanatcisubdivb.active,.bar .sanatcisubdivc.active,.bar .sanatcisubdivcc.active,
+.bar .sanatcisubdivd.active,.bar .sanatcisubdive.active,.bar .sanatcisubdivf.active,.bar .sanatcisubdivg.active,
+.bar .sanatcisubdivh.active,.bar .sanatcisubdivi.active,.bar .sanatcisubdivii.active,.bar .sanatcisubdivj.active,
+.bar .sanatcisubdivk.active,.bar .sanatcisubdivl.active,.bar .sanatcisubdivm.active,.bar .sanatcisubdivn.active,
+.bar .sanatcisubdivo.active,.bar .sanatcisubdivoo.active,.bar .sanatcisubdivp.active,.bar .sanatcisubdivr.active,
+.bar .sanatcisubdivq.active,.bar .sanatcisubdivs.active,.bar .sanatcisubdivss.active,.bar .sanatcisubdivt.active,
+.bar .sanatcisubdivu.active,.bar .sanatcisubdivuu.active,.bar .sanatcisubdivv.active,.bar .sanatcisubdivw.active,
+.bar .sanatcisubdivx.active,.bar .sanatcisubdivy.active,.bar .sanatcisubdivz.active {
+  transition: all 1.2s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(0);
+  display: block;
+}
+/*sanactisubdiva*/
+.bar .menu310{
+  position: absolute;
+  left: 60%;
+  height: 100%;
+  top: 0;
+  width: 40%;
+  background-color: #1e3966;
+  transition: all 1s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(-250%);
+  display: none;
+}
+.bar .menu34.active {
+  transition: all 1.2s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(0);
+  display: block;
+}
+.bar .menu39.active {
+  transition: all 1.2s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(0);
+  display: block;
+}
+.bar .menu310.active {
+  transition: all 1.2s ease-in;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transform: translateX(0);
+  display: block;
+}
+.bar.active{
+  transition: all 1.2s ease;
+  transform: translateY(0);
+}
+.bar .backmenu{
+  display: none;
+}
+.bar .menu ul{
+  list-style: none;
+}
+.bar .menu ul li button{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  width: 250px;
+  text-align: left;
+}
+.bar .menu ul li button span{
+  float: right;
+  font-size: 18px;
+}
+.bar .menu ul li{
+  margin-top: 10px;
+}
+.bar ul{
+  list-style: none;
+}
+.bar ul li button{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  width: 250px;
+  text-align: left;
+}
+.bar .menu ul li button{
+  font-size: 20px;
+  font-weight: bold;
+}
+.bar ul li button span{
+  float: right;
+  font-size: 20px;
+}
+.bar ul li{
+  margin-top: 10px;
+}
+.bar .menu34 ul,.bar .menu39 ul,.bar .menu310 ul{
+  list-style: none;
+}
+.bar .menu34 ul li button,.bar .menu39 ul li button,.bar .menu310 ul li button{
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+ border: none;
+ background-color: transparent;
+ width: 250px;
+ text-align: left;
+}
+.bar .menu34 ul li,.bar .menu39 ul li,.bar .menu310 ul li{
+  margin-top: 10px;
+}
+.bar ul li button:hover{
+  color: orange;
+  margin-left: 20px;
+}
+.bar .menu2 ul li button:hover{
+  color: orange;
+  margin-left: 20px;
+} 
+.menu2 ul li button,.menu4 ul li button,.menu5 ul li button,.menu6 ul li button,.menu61 ul li button,.menu7 ul li button,.menu8 ul li button,.menu9 ul li button,.menu10 ul li button,.menu11 ul li button{
+  color: white;
+}
+.bar .menu2 ul,.bar .menu4 ul,.bar .menu5 ul,.bar .menu6 ul,.bar .menu61 ul,.bar .menu7 ul,.bar .menu8 ul,.bar .menu9 ul,.bar .menu10 ul,.bar .menu11 ul{
+  margin-left: 20%;
+  margin-top: 15%;
+}
+.bar .menu34 ul,.bar .menu39 ul,.bar .menu310 ul{
+  margin-left: 25%;
+  margin-top: 15%;
+}
+/*****************************************************header*****************************************************/
+.contactheader{
+  position: absolute;
+  top: 40px;
+  right: 10%;
+  z-index: 0;
+}
+.contactheader a{
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  font-weight: 400;
+  transition: all 1.2s ease-in;
+  font-family: "Big Caslon";
+}
+.contactheader a:hover{
+  color: crimson;
+  transition: all 1.2s ease-in;
+}
+/**************************************************header********************************************************/
+/****************************************************index***********************************************************/
+.imageindex{
+  text-align: center;
+  margin-top: 10px;
+}
+.imageindex img{
+  width: 95%;
+  height: 650px;
+  object-fit: cover;
+}
+.imageindex .imageindextext{
+  position: absolute;
+  left: 15%;
+  top: 600px;
+  height: 280px;
+  width: 700px;
+  background-color: #efecea;
+  clip-path: polygon(100% 0 , 0 0 , 0 100% , 90% 100%);
+  padding: 2%;
+}
+.imageindextext label{
+  margin-top: 15px;
+  color: #1c4483;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: "Big Caslon";
+  text-align: left;
+  margin-right: 50px;
+}
+.center{
+  text-align: center;
+}
+.indextext{
+  width: 800px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+.indextext label{
+  color: #1c4483;
+  font-size: 28px;
+  font-family: "Big Caslon";
+  text-align: left;
+}
+.basarilar{
+  font-family: "Big Caslon";
+  color: #1c4483;
+  margin-top: 100px;
+}
+.basarilar h2{
+  font-size: 35px;
+  font-weight: 400;
+}
+.sayac{
+  background-color:#efecea;
+  width: 95%;
+  margin-left: 2.5%;
+  font-family: "Big Caslon";
+  margin-top: -100px;
+}
+.sayac div{
+  color: #1c4483;
+  padding: 2%;
+}
+.sayac h2{
+  font-size: 50px;
+}
+.sayac label{
+  font-size: 24px;
+}
+.sayac h2 span{
+  font-size: 24px;
+  font-style: italic;
+}
+/****************************************************index***********************************************************/
+/**********************************************slider*******************************************************/
+.sliderdiv{
+  margin-top: 100px;
+  height: 700px;
+  width: 100%;
+  background-color: #efecea;
+  clip-path: polygon(80% 0 , 0 0 , 0% 100% , 70% 100%);
+  z-index: -1;
+}
+.swipe{
+  margin-top: -35%;
+  font-family: "Big Caslon";
+  font-size: 20px;
+}
+.swipe .panel{
+  position: absolute;
+  right: 20%;
+  width: 800px;
+  height: 450px;
+  margin-top: 70px;
+  z-index: -1;
+  opacity: 0;
+}
+.swipe .panel.currentback{
+  position: absolute;
+  right: 20%;
+  width: 800px;
+  height: 450px;
+  margin-top: 70px;
+  z-index: -1;
+  opacity: 1;
+  z-index: 999;
+  transition: all 0.5s ease;
+  transform: translateX(-200%);
+}
+.swipe .panel.current{
+  position: absolute;
+  right: 20%;
+  width: 800px;
+  height: 450px;
+  margin-top: 70px;
+  z-index: -1;
+  opacity: 1;
+  z-index: 999;
+  transition: all 1s ease-in;
+}
+.swipe .panel img{
+  width: 100%;
+  height: 450px;
+  opacity: 1;
+  object-fit: cover;
+}
+.swipe .panel.current img{
+  width: 100%;
+  height: 450px;
+  opacity: 1;
+  object-fit: cover;
+  transition: all 1.5s ease-in;
+}
+.button-next{
+  position: absolute;
+  right: 400px;
+  font-family: "Big Caslon";
+  border: none;
+  background-color: red;
+  background-color: transparent;
+  font-size: 15px;
+  margin-top: 550px;
+  z-index: 999;
+}
+.button-back{
+  position: absolute;
+  right: 550px;
+  font-family: "Big Caslon";
+  border: none;
+  background-color: red;
+  background-color: transparent;
+  font-size: 15px;
+  margin-top: 550px;
+  z-index: 999;
+}
+.slidercount{
+  position: absolute;
+  right: 475px;
+  font-family: "Big Caslon";
+  border: none;
+  background-color: red;
+  background-color: transparent;
+  font-size: 20px;
+  margin-top: 545px;
+}
+.panel .swipetext{
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  padding: 5%;
+  right:600px;
+  z-index: 999;
+  margin-top: -380px;
+  overflow: hidden;
+}
+.panel .swipetext h4{
+  color: #1c4483;
+  font-size: 28px;
+  font-family: "Big Caslon";
+}
+.panel .swipetext p{
+  color: gray;
+  font-family: "Big Caslon";
+  margin-top: 20px;
+}
+.panel .swipetext label{
+  color: #1c4483;
+  margin-top: 20px;
+}
+.panel .swipetext label span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.swipetext h4::after{
+  content: '';
+  position: absolute;
+  top: 75;
+  left: 35px;
+  width: 250px;
+  height: 0.1px;
+  background-color: #1c4483;
+  opacity: 0;
+  transition: opacity 800ms, transform 800ms;
+}
+.swipetext h4::after{
+  transform: translate3d(-100%, 0, 0);
+}
+.swipetext h4:hover::after{
+  transform: translate3d(0, 0, 0);
+  transition: opacity 800ms, transform 800ms;
+  opacity: 1;
+}
+.swipetext label:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: crimson;
+  transition: all 200ms ease-in;
+}
+/*****************************************slider*************************************************************/
+/********************************************bigcard***************************************************/
+.bigcard{
+  width: 100%;
+  margin-top: 800px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+.bigcard .card{
+  width: 47%;
+  height: 350px;
+  margin-left: 3%;
+  margin-bottom: 200px;
+}
+.bigcard .card .cardimage{
+  overflow: hidden;
+}
+.bigcard .card .cardimage img{
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+  transition: all 400ms ease-in;
+}
+.bigcard .card .cardimage img:hover{
+  transform: scale(1.1);
+  transition: all 400ms ease-in;
+}
+
+.bigcard .card .bigcardtext{
+  position: absolute;
+  left: 20px;
+  top: 300px;
+  width: 80%;
+  height: 200px;
+  background-color: #efecea;
+  padding: 5%;
+  z-index: 999;
+}
+.bigcardtext{
+  overflow: hidden;
+}
+.bigcardtext h4{
+  font-family: "Big Caslon";
+  color: #1c4483;
+  font-size: 26px;
+}
+.bigcardtext h4::after{
+  content: '';
+  position: absolute;
+  top: 60;
+  left: 35px;
+  width: 170px;
+  height: 0.1px;
+  background-color: #1c4483;
+  opacity: 0;
+  transition: opacity 800ms, transform 800ms;
+}
+.bigcardtext h4::after{
+  transform: translate3d(-100%, 0, 0);
+}
+.bigcardtext h4:hover::after{
+  transform: translate3d(0, 0, 0);
+  transition: opacity 800ms, transform 800ms;
+  opacity: 1;
+}
+.bigcardtext label{
+  font-family: "Big Caslon";
+  font-size: 18px;
+}
+/********************************************bigcard***************************************************/
+/*******************************************contactdiv*****************************************************/
+.contactdiv{
+  margin-top: 100px;
+  height: 600px;
+  width: 100%;
+  background-color: #efecea;
+  clip-path: polygon(55% 0 , 0 0 , 0% 100% , 45% 100%);
+  z-index: -1;
+  overflow: hidden;
+  transition: all 1s ease-in;
+}
+.contactdiv img{
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+  transition: all 400ms ease-in;
+}
+.contactdiv img:hover{
+  transform: scale(1.05);
+  transition: all 400ms ease-in;
+}
+.contactdivtext{
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  height: 400px;
+  margin-top: -550px;
+  z-index: 1;
+}
+.contactleft{
+  width: 40%;
+  max-height: 600px;
+  padding: 1%;
+  position: absolute;
+  margin-left: 950px;
+}
+.contactlefttext{
+  margin-left: 25%;
+}
+.contactlefttext h4{
+  font-family: "Big Caslon";
+  color:#1c4483 ;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+.contactleft input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color:#efecea ;
+  font-family: "Big Caslon";
+  font-size: 20px;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+.contactleft textarea{
+  width: 100%;
+  max-height: 80px;
+  min-height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color:#efecea ;
+  font-family: "Big Caslon";
+  font-size: 20px;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+.contactleft button{
+  width: 200px;
+  height: 40px;
+  padding: 1%;
+  background-color: #efecea;
+  border: none;
+  border-radius: 10px;
+  float: right;
+}
+.contactleft p{
+  font-size: 18px;
+  font-family: "Big Caslon";
+  color: #1c4483;
+}
+.dropzone{
+  text-align: center;
+  background: #efecea;
+  border-radius: 5px;
+  border: 2px dashed rgb(0, 135, 247);
+  max-height: 150px;
+  overflow-y: auto;
+}
+.aboutdiv{
+  margin-top: 150px;
+  height: 600px;
+  width: 100%;
+  background-color: #efecea;
+  clip-path: polygon(55% 0 , 0 0 , 0% 100% , 45% 100%);
+  z-index: -1;
+  overflow: hidden;
+  transition: all 1s ease-in;
+}
+.aboutdiv img{
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+  transition: all 400ms ease-in;
+}
+.aboutdiv img:hover{
+  transform: scale(1.05);
+  transition: all 400ms ease-in;
+}
+.aboutdivtext{
+  position: absolute;
+  right: 350px;
+  z-index: 999;
+  width: 450px;
+  height: 400px;
+  margin-top: -400px;
+  overflow: hidden;
+  z-index: 1 !important;
+}
+.aboutdivtext h4{
+ font-family: "Big Caslon";
+ color: #1c4483;
+ font-size: 30px;
+}
+.aboutdivtext p{
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Big Caslon";
+}
+.aboutdivtext label{
+  color: #1c4483;
+  margin-top: 20px;
+  font-family: "Big Caslon";
+  font-size: 22px;
+}
+.aboutdivtext label span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.aboutdivtext h4::after{
+  content: '';
+  position: absolute;
+  top: 35;
+  left: 0;
+  width: 150px;
+  height: 0.1px;
+  background-color: #1c4483;
+  opacity: 0;
+  transition: opacity 800ms, transform 800ms;
+}
+.aboutdivtext h4::after{
+  transform: translate3d(-100%, 0, 0);
+}
+.aboutdivtext h4:hover::after{
+  transform: translate3d(0, 0, 0);
+  transition: opacity 800ms, transform 800ms;
+  opacity: 1;
+}
+.aboutdivtext label:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: crimson;
+  transition: all 200ms ease-in;
+}
+/*******************************************contactdiv*****************************************************/
+/*******************************************fixeddiv*****************************************************/
+.fixeddiv{
+  margin-top: 150px;
+  height: 500px;
+  background: url("image/fixed.jpg") fixed;
+  width: 100%;
+  object-fit: cover;
+}
+.fixeddivtext{
+  position: absolute;
+  background-color: red;
+  width: 380px;
+  height: 480px;
+  right: 20%;
+  margin-top: -50px;
+  background-color: #efecea;
+  padding: 2%;
+}
+.fixeddivtext h4{
+ font-family: "Big Caslon";
+ color: #1c4483;
+ font-size: 30px;
+}
+.fixeddivtext p{
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Big Caslon";
+  margin-top: 20px;
+}
+.fixeddivtext label{
+  color: #1c4483;
+  margin-top: 20px;
+  font-family: "Big Caslon";
+  font-size: 22px;
+}
+.fixeddivtext label span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.fixeddivtext label:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: crimson;
+  transition: all 200ms ease-in;
+}
+/*******************************************fixeddiv*****************************************************/
+/********************************************smallcard************************************************/
+.smallcarddiv{
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.smallcarddiv .smallcard{
+  width: 29.3%;
+  overflow: hidden;
+  background-color:#efecea;
+  height: 350px;
+  padding: 3%;
+  float: left;
+  margin-left: 3%;
+  overflow: hidden;
+}
+.smallcarddiv .smallcard h4{
+ font-family: "Big Caslon";
+ color: #1c4483;
+ font-size: 28px;
+ overflow: hidden;
+}
+.smallcarddiv .smallcard p{
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Big Caslon";
+}
+.smallcarddiv .smallcard label{
+  color: #1c4483;
+  margin-top: 20px;
+  font-family: "Big Caslon";
+  font-size: 22px;
+}
+.smallcarddiv .smallcard label span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.smallcarddiv .smallcard label:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: crimson;
+  transition: all 200ms ease-in;
+}
+/********************************************smallcard************************************************/
+
+/************************************************************************************************************************/
+.footer{
+ background-color: #1c355e;
+ width: 100%;
+ height: 650px;
+ color: #efecea;
+ padding: 2%;
+ margin-top: 100px;
+}
+.fixedfooter{
+  background-color:#162a4b;
+  font-family: "Bis Caslon";
+  font-size: 17px;
+  padding: 2%;
+}
+.fixedfooter a{
+  float: right;
+  text-decoration: none;
+  color: #efeeca;
+  transition: all 1s ease-in;
+}
+.fixedfooter a:hover{
+  color: orange;
+  transition: all 1s ease-in;
+}
+.fixedfooter label{
+  text-decoration: none;
+  color: #efeeca;
+}
+.upfooter{
+  width: 100%;
+}
+.upfooter .hakkimizda{
+  width: 33%;
+  font-family: "Big Caslon";
+  font-size: 20px;
+  float: left;
+}
+.upfooter .hizmetlerimiz{
+  width: 33%;
+  font-family: "Big Caslon";
+  font-size: 20px;
+  float: left;
+}
+.upfooter .iletisim{
+  width: 33%;
+  font-family: "Big Caslon";
+  font-size: 20px;
+  float: left;
+}
+.upfooter .iletisim a{
+  color: white;
+}
+.upfooter .iletisim a:hover{
+  color: orange;
+}
+.upfooter .iletisim p span{
+  color: orange;
+  font-size: 14px;
+}
+.upfooter .hakkimizda a{
+  text-decoration: none;
+  color: #efecea;
+  transition: all 1s ease-in;
+}
+.upfooter .hakkimizda h4 a{
+  text-decoration: none;
+  color: orange;
+}
+.upfooter .hizmetlerimiz a{
+ color: #efecea;
+ text-decoration: none;
+ transition: all 1s ease-in;
+}
+.upfooter .hakkimizda h4{
+  font-size: 24px;
+  color: orange;
+  font-weight: bolder;
+}
+.upfooter .hakkimizda hr{
+  color: orange;
+  height: 2px;
+  width: 200px;
+}
+.upfooter .hakkimizda ul li{
+  list-style-type: none;
+  color: #efecea;
+  margin-top: 10px;
+}
+.upfooter .hizmetlerimiz h4{
+  font-size: 24px;
+  color: orange;
+  font-weight: bolder;
+}
+.upfooter .hizmetlerimiz hr{
+  color: orange;
+  height: 2px;
+  width: 200px;
+}
+.upfooter .hizmetlerimiz ul li{
+  list-style-type: none;
+  color: #efecea;
+  margin-top: 10px;
+}
+.upfooter .iletisim h4{
+  font-size: 24px;
+  color: orange;
+  font-weight: bolder;
+}
+.upfooter .iletisim hr{
+  color: orange;
+  height: 2px;
+  width: 200px;
+}
+.upfooter .iletisim p{
+  color: #efecea;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.upfooter .iletisim p i {
+  transform: scale(1.2);
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.upfooter .hakkimizda ul li a:hover{
+  color: orange;
+  transition: all 1s ease-in;
+}
+.upfooter .hizmetlerimiz ul li a:hover{
+  color: orange;
+  transition: all 1s ease-in;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #efecea;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1c4483;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1c4483;
+  width: 50px;
+}
+.back-to-top{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 999;
+  display: none;
+}
+.btn-top{
+  background-color: #1c4483;
+  opacity: 0.9;
+  border:1px solid #1c4483 ;
+  width:40px;
+  height:40px;
+  color: #fff;
+  border-radius: 30%;
+  -moz-border-radius: 30%;
+  -webkit-border-radius:30%;
+}
+/****************************************************************************************************************/
+.headerinfo{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.headerinfo p{
+  color: gray;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Big Caslon";
+}
+.headerinfo span{
+  transform: scale(0.6);
+  color: orange;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.headerinfo a{
+  text-decoration: none;
+  color: gray;
+  transition: all 1s ease-in;
+}
+.headerinfo a:hover{
+  color: orange;
+  text-decoration: underline;
+  transition: all 1s ease-in;
+}
+.sanatcidiv{
+  width: 100%;
+  height: 200px;
+  background-color: #efecea;
+  clip-path: polygon(35% 0 , 0 0 , 0% 100% , 32% 100%);
+}
+.sanatcidivtext{
+  margin-bottom: -100px;
+}
+.sanatcidivtext h1{
+  position: absolute;
+  margin-left: 25%;
+  color: #162a4b;
+  font-family: "Big Caslon";
+  font-size: 44px;
+  margin-top: -120px;
+}
+.sanatcidivtext h2{
+  color: #162a4b;
+  font-family: "Big Caslon";
+  font-size: 34px;
+  text-align: center;
+  margin: 20px;
+}
+.sanatcidivtext .text{
+  padding: 3%;
+  font-size: 20px;
+  font-family: "Big Caslon";
+  color: gray;
+}
+.sanatcidivtext .text h1,h2,h3,h4,h5,h6{
+  color: #162a4b;
+  font-size: 44px;
+  font-family: "Big Caslon";
+}
+.sanatcidivtext .text img{
+  margin-left: 15%;
+  width: 70%;
+  object-fit: fill;
+}
+.sanatcilist{
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sanatcilist ul{
+  width: 33%;
+  list-style-type: none;
+}
+.sanatcilist ul li a{
+ text-decoration: none;
+ color: gray;
+ transition: all 1s ease-in;
+ font-size: 22px;
+ font-family: "Big Caslon";
+ margin-left: 100px;
+}
+.sanatcilist ul li a:hover{
+  color: orange;
+  transition: all 1s ease-in;
+  text-decoration: underline;
+}
+.sanatcilist ul li a span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: gray;
+  transition: all 200ms ease-in;
+}
+.sanatcilist ul li a:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+/*****************************************************************************************************************/
+/***************************************************hakkimizda**********************************************/
+.hakkimizdadiv{
+  width: 95%;
+  margin-left: 2.5%;
+  height: 450px;
+  background-color: #efecea;
+}
+.hakkimizdadivimg img{
+  width: 55%;
+  margin-top: 50px;
+  position: absolute;
+  left: 0;
+  height: 500px;
+  object-fit: cover;
+  clip-path: polygon(100% 0 , 0 0 , 0% 100% , 90% 100%);
+}
+.hakkimizdadivimg h2{
+  color: #1c4483;
+  font-family: "Big Caslon";
+  font-size: 60px;
+  position: absolute;
+  left: 55%;
+  margin-top: 250px;
+}
+.hakkimizdadivimg h4{
+  color: #1c4483;
+  font-family: "Big Caslon";
+  font-size: 60px;
+  position: absolute;
+  left: 55%;
+  font-weight: 100;
+  margin-top: 250px;
+  padding: 1%;
+}
+.hakkimizdadivtext{
+  margin-top: 150px;
+}
+.hakkimizdadivtext ol li{
+  list-style-type: none;
+  font-size: 20px;
+  color: gray;
+  font-family: "Big Caslon";
+  margin-top: 5px;
+}
+.hakkimizdadivtext ul li{
+  list-style-type: none;
+  font-size: 20px;
+  color: gray;
+  font-family: "Big Caslon";
+  margin-top: 5px;
+}
+.hakkimizdadivtext ul li  span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: gray;
+  transition: all 200ms ease-in;
+}
+.hakkimizdadivtext ol li  span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: gray;
+  transition: all 200ms ease-in;
+}
+.hakkimizdadivtext ul li:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.hakkimizdadivtext ol li:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.hakkimizdadivtext .yanyana{
+  margin-top: 50px;
+}
+.hakkimizdadivtext .yanyana p{
+  width: 40%;
+  margin-left: 10%;
+  float: left;
+}
+.hakkimizdadivtext h1{
+  color: #1c4483;
+  font-family: "Big Caslon";
+  font-size: 50px;
+}
+.hakkimizdadivtext p{
+  font-family: "Big Caslon";
+  font-size: 20px;
+  color: gray;
+}
+.hakkimizdadivtext a{
+  list-style-type: none;
+  text-decoration: none;
+  color: #1c4483;
+  font-size: 22px;
+}
+.hakkimizdadivtext p span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: gray;
+  transition: all 200ms ease-in;
+}
+.hakkimizdadivtext a:hover{
+  list-style-type: none;
+  text-decoration: none;
+  color: #1c4483;
+  font-size: 22px;
+}
+.hakkimizdadivtext p:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.adres{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #efecea;
+  padding: 2%;
+}
+.adreslerdiv{
+  width: 30%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 1%;
+  float: left;
+  background-color: white;
+}
+.adreslerdiv h4{
+  color: 1c4483;
+  font-family: "Big Caslon";
+  margin-left: 30px;
+  margin-top:15px;
+}
+.adreslerdiv ul{
+  list-style-type: none;
+}
+.adreslerdiv ul li{
+  font-family: "Big Caslon";
+  font-size: 18px;
+  color: gray;
+  margin-top: 10px;
+}
+.adreslerdiv ul li span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: gray;
+  transition: all 200ms ease-in;
+}
+.adreslerdiv ul li:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+/***************************************************hakkimizda**********************************************/
+/***************************************************sss**********************************************/
+.sssdiv{
+  position: relative;
+  background-color: #efecea;
+  width: 100%;
+  margin-top: 200px;
+  padding: 2%;
+}
+.sssdivtext{
+  width: 80%;
+  margin-left: 10%;
+  background-color: #fff;
+  margin-top: 50px;
+  padding: 2%;
+}
+.sssdivtext h4{
+  color: #1c4483;
+  font-family: "Big Caslon";
+  font-size: 20px;
+}
+.sssdivtext p{
+  color: gray;
+  font-family:"Big Caslon";
+  font-size: 18px;
+  margin-top: 20px;
+}
+.sssdiv .nextprev{
+  position: absolute;
+  right: 10%;
+  margin-top: 50px;
+}
+.sssdiv .nextprev a{
+  background-color: transparent;
+  border: none;
+  transition: all 200ms ease-in;
+}
+.sssdiv .nextprev a i{
+  font-size: 23px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.sssdiv .nextprev a:hover i{
+  font-size: 28px;
+  transition: all 200ms ease-in;
+}
+.sssdiv .nextprev #start{
+  font-size: 20px;
+  font-family: "Big Caslon";
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.sssdiv .nextprev #middle{
+  font-size: 25px;
+  font-weight: bolder;
+  color: orange;
+  font-family: "Big Caslon";
+}
+.sssdiv .nextprev #end{
+  font-size: 20px;
+  font-family: "Big Caslon";
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/***************************************************sss**********************************************/
+/****************************************************ftografyukle**********************************************************/
+.fotografyukle{
+  background-color: #efecea;
+  width: 100%;
+  margin-top: 200px;
+  padding: 2%;
+  height: 600px;
+}
+.fotografyukle input{
+  border: none;
+  width: 60%;
+  margin-left: 20%;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 1%;
+}
+.fotografyukle p{
+  margin-left: 20%;
+  width: 60%;
+  font-size: 18px;
+  font-family:"Big Caslon";
+  color: #1c4483;
+  margin-top: 20px;
+}
+.fotografyukle textarea{
+ border: none;
+ width: 60%;
+ margin-left: 20%;
+ height: 100px;
+ margin-top: 20px;
+ border-radius: 10px;
+ padding: 1%;
+}
+.fotografyukle .dropzone{
+  width: 60%;
+  margin-left: 20%;
+}
+.fotografyukle .gndr{
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  float: right;
+  width: 200px;
+}
+/****************************************************ftografyukle**********************************************************/
+/*******************************************************basin**********************************************************/
+.basin{
+  background-color: #efecea;
+  padding: 5%;
+  margin-top: 100px;
+}
+.basin input{
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  border:none;
+  background-color: white;
+  height: 30px;
+  border-radius: 10px;
+  padding: 1%;
+}
+.basin textarea{
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  border:none;
+  background-color: white;
+  height: 150px;
+  border-radius: 10px;
+  padding: 1%;
+}
+.basin p{
+  margin-left: 20%;
+  font-family: "Big Caslon";
+  font-size: 20px;
+}
+.basin button{
+  border-radius: 10px;
+  border: none;
+  background:white;
+  width: 20%;
+  float: right;
+  margin-right: 25%;
+}
+.basin h4{
+  color: #1c4483;
+  font-family: "Big Caslon";
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+.basin .dropzone{
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+.basin select{
+  width: 60%;
+  margin-left: 20%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+/*******************************************************basin**********************************************************/
+.kisiselveriler{
+  font-size: 20px;
+  font-family: "Big Caslon";
+  color: gray;
+  margin-top: 50px;
+}
+.searchdiv{
+  background-color: #efecea;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 5%;
+}
+.searchanadiv{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.searchanadiv h4{
+  font-family: "Big Caslon";
+  font-size: 35px;
+}
+.searchanadiv p{
+  color: gray;
+  font-size: 22px;
+  font-style: italic;
+}
+.searchdivtext{
+  background-color: white;
+  margin-top: 50px;
+  padding: 3%;
+  width: 80%;
+  margin-left: 10%;
+}
+.searchdivtext a{
+  text-decoration: none;
+  font-size: 30px;
+}
+.searchdivtext a label{
+  font-size: 25px;
+  font-family: "Big Caslon";
+  color: #1c4483;
+}
+.searchdivtext a span{
+  margin-right: 20px;
+  font-size: 15px;
+  color: orange;
+  transition: all 200ms ease-in;
+}
+.searchdivtext a:hover span{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: crimson;
+  transition: all 200ms ease-in;
+}
+#iyzipay-checkout-form{
+  margin-top:50px;
+}
+/****************************************************************************************************/
+.owl-carousel .item{
+  width: 50px;
+}
+.owl-carousel{
+  width: 50px;
+  margin-top: 100px;
+}
+.owl-carousel a{
+  color: #162a4b;
+  text-decoration: none;
+  font-size: 20px;
+}
+.owl-carousel a:hover{
+  color: orange;
+  text-decoration: none;
+  font-size: 20px;
+}
+/********************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************media*********************************************/
+@media(max-width: 1800px){
+  .swipe{
+    margin-top: -38%;
+    transition: all 1s ease-in;
+  }
+  .swipe .panel{
+    right: 15%;
+  }
+  .swipe .panel.currentback{
+    right: 15%;
+  }
+  .swipe .panel.current{
+    right: 15%;
+  }
+}
+@media(max-width: 1700px){
+  .swipe{
+    margin-top: -40%;
+    transition: all 1s ease-in;
+  }
+  .button-next{
+    right: 350px;
+  }
+  .button-back{
+    right: 500px;
+  }
+  .slidercount{
+    right: 425px;
+  }
+  .contactdivtext{
+    right: 100px;
+  }
+  .aboutdivtext{
+    right: 300px;
+  }
+}
+@media(max-width: 1600px){
+  .bar .menu{
+    left: 7%;
+  }
+  #btn{
+    left: 7%;
+  }
+  .imageindex .imageindextext{
+    left: 10%;
+    top: 680px;
+    height: 150px;
+    width: 500px;
+  }
+  .imageindextext label{
+    margin-top: 5px;
+    color: #1c4483;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: "Goudy Old Style";
+    text-align: left;
+    margin-right: 50px;
+  }
+  .swipe{
+    margin-top: -45%;
+    transition: all 1s ease-in;
+  }
+  .button-next{
+    right: 300px;
+  }
+  .button-back{
+    right: 450px;
+  }
+  .slidercount{
+    right: 375px;
+  }
+  .aboutdivtext{
+    position: absolute;
+    right: 250px;
+    z-index: 999;
+    width: 450px;
+    height: 100%;
+    margin-top: -400px;
+    overflow: hidden;
+  }
+  .fixeddivtext{
+    right: 10%;
+  }
+  .contactdivtext{
+    position: absolute;
+    right: 150px;
+    z-index: 999;
+    width: 100%;
+    height: 400px;
+    margin-top: -550px;
+    z-index: 1;
+  }
+}
+@media(max-width: 1500px){
+  .aboutdivtext{
+    right: 180px;
+  }
+  .contactdivtext{
+    position: absolute;
+    right: 200px;
+    z-index: 999;
+    width: 100%;
+    height: 400px;
+    margin-top: -550px;
+    z-index: 1;
+  }
+}
+@media(max-width: 1450px){
+  .swipe{
+    margin-top: -48%;
+    transition: all 1s ease-in;
+  }
+  .swipe .panel{
+    right: 10%;
+  }
+  .swipe .panel.currentback{
+    right: 10%;
+  }
+  .swipe .panel.current{
+    right: 10%;
+  }
+  .button-next{
+    right: 250px;
+  }
+  .button-back{
+    right: 400px;
+  }
+  .slidercount{
+    right: 325px;
+  }
+}
+@media(max-width: 1400px){
+.mailmessage{
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  background: #fff;
+  font-family: "Big Caslon";
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 2%;
+}
+  .bigcard .card{
+    width: 47%;
+    height: 300px;
+  }
+  .bigcard .card .cardimage img{
+    height: 300px;
+  }
+  .bigcard .card .bigcardtext{
+    top: 250px;
+  }
+  .contactdivtext{
+    position: absolute;
+    right: 250px;
+    z-index: 999;
+    width: 100%;
+    height: 400px;
+    margin-top: -550px;
+    z-index: 1;
+  }
+  .sanatcilist ul{
+    width: 50%;
+    list-style-type: none;
+  }
+}
+@media(max-width: 1350px){
+  .aboutdivtext{
+    right: 100px;
+  }
+}
+@media(max-width: 1300px){
+  .bar .sanatcisubdiva ul li button,.bar .sanatcisubdivb ul li button,.bar .sanatcisubdivc ul li button,
+  .bar .sanatcisubdivcc ul li button,.bar .sanatcisubdivd ul li button,.bar .sanatcisubdive ul li button,
+  .bar .sanatcisubdivf ul li button,.bar .sanatcisubdivg ul li button,.bar .sanatcisubdivh ul li button,
+  .bar .sanatcisubdivi ul li button,.bar .sanatcisubdivii ul li button,.bar .sanatcisubdivj ul li button,
+  .bar .sanatcisubdivk ul li button,.bar .sanatcisubdivl ul li button,.bar .sanatcisubdivm ul li button,
+  .bar .sanatcisubdivn ul li button,.bar .sanatcisubdivo ul li button,.bar .sanatcisubdivoo ul li button,
+  .bar .sanatcisubdivp ul li button,.bar .sanatcisubdivr ul li button,.bar .sanatcisubdivq ul li button,
+  .bar .sanatcisubdivs ul li button,.bar .sanatcisubdivss ul li button,.bar .sanatcisubdivt ul li button,
+  .bar .sanatcisubdivu ul li button,.bar .sanatcisubdivuu ul li button,.bar .sanatcisubdivv ul li button,
+  .bar .sanatcisubdivw ul li button,.bar .sanatcisubdivx ul li button,.bar .sanatcisubdivy ul li button,
+  .bar .sanatcisubdivz ul li button{
+   font-size: 18px;
+ }
+ .bar .menu ul li button,.bar .menu2 ul li button,.bar .menu4 ul li button,.bar .menu5 ul li button,.bar .menu6 ul li button,.bar .menu61 ul li button,.bar .menu7 ul li button,.bar .menu8 ul li button,.bar .menu9 ul li button,.bar .menu10 ul li button,.bar .menu11 ul li button,.bar .menu34 ul li button,.bar .menu39 ul li button,.bar .menu310 ul li button{
+  font-size: 18px;
+}
+.bar .menu ul li button span,.bar .menu2 ul li button span,.bar .menu4 ul li button span,.bar .menu5 ul li button span,.bar .menu6 ul li button span,.bar .menu61 ul li button span,.bar .menu7 ul li button span,.bar .menu8 ul li button span,.bar .menu9 ul li button span,.bar .menu10 ul li button span,.bar .menu11 ul li button span,.bar .menu34 ul li button span,.bar .menu39 ul li button span,.bar .menu310 ul li button span{
+  margin-right: 50px;
+}
+.swipe{
+  margin-top: -52%;
+  transition: all 1s ease-in;
+}
+.swipe .panel{
+  right: 5%;
+}
+.swipe .panel.currentback{
+  right: 5%;
+}
+.swipe .panel.current{
+  right: 5%;
+}
+.contactdiv{
+  margin-top: 200px;
+  height: 400px;
+  width: 100%;
+  background-color: #efecea;
+  clip-path: polygon(55% 0 , 0 0 , 0% 100% , 45% 100%);
+  z-index: -1;
+  overflow: hidden;
+  transition: all 1s ease-in;
+}
+.aboutdiv{
+  margin-top: 200px;
+  height: 400px;
+  width: 100%;
+  background-color: #efecea;
+  clip-path: polygon(55% 0 , 0 0 , 0% 100% , 45% 100%);
+  z-index: -1;
+  overflow: hidden;
+  transition: all 1s ease-in;
+}
+.aboutdivtext{
+  position: absolute;
+  right: 50px;
+  z-index: 999;
+  width: 450px;
+  height: 100%;
+  margin-top: -300px;
+  overflow: hidden;
+}
+.contactdivtext{
+  position: absolute;
+  right: 280px;
+  z-index: 999;
+  width: 100%;
+  height: 400px;
+  margin-top: -450px;
+  z-index: 1;
+}
+}
+@media(max-width: 1280px){
+  .imageindex img{
+    width: 95%;
+    height: 550px;
+  }
+  .imageindex .imageindextext{
+    top: 580px;
+    height: 150px;
+    width: 450px;
+    left: 5%;
+  }
+  .indextext{
+    width: 600px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .indextext label{
+    font-size: 24px;
+  }
+}
+@media(max-width: 1200px){
+  .swipe .panel img{
+    width: 80%;
+    height: 350px;
+    object-fit: cover;
+  }
+  .swipe .panel.current img{
+    width: 80%;
+    height: 350px;
+    transition: all 1.5s ease-in;
+  }
+  .swipe .panel{
+    right: 0;
+  }
+  .swipe .panel.currentback{
+    right: 0;
+  }
+  .swipe .panel.current{
+    right: 0;
+  }
+  .swipe{
+    margin-top: -58%;
+    transition: all 1s ease-in;
+  }
+  .button-next{
+    right: 200px;
+  }
+  .button-back{
+    right: 350px;
+  }
+  .slidercount{
+    right: 275px;
+  }
+  .panel .swipetext{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    padding: 5%;
+    right:600px;
+    z-index: 999;
+    margin-top: -320px;
+  }
+  .bigcard .card{
+    width: 47%;
+    height: 250px;
+  }
+  .bigcard .card .cardimage img{
+    height: 250px;
+  }
+  .bigcard .card .bigcardtext{
+    top: 200px;
+  }
+  .smallcarddiv .smallcard{
+    width: 47%;
+    overflow: hidden;
+    background-color:efecea;
+    height: 350px;
+    padding: 3%;
+    float: left;
+    margin-left: 3%;
+    margin-bottom: 100px;
+  }
+  .contactdivtext{
+    position: absolute;
+    right: 360px;
+    z-index: 999;
+    width: 100%;
+    height: 400px;
+    margin-top: -450px;
+    z-index: 1;
+  }
+  .contactleft{
+    width: 45%;
+    max-height: 600px;
+    padding: 1%;
+    position: absolute;
+    margin-left: 950px;
+  }
+}
+@media(max-width: 1150px){
+  .swipe .panel img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+  .swipe .panel.current img{
+    width: 100%;
+    height: 450px;
+    transition: all 1.5s ease-in;
+  }
+  .swipe .panel{
+    right: 12%;
+  }
+  .swipe .panel.currentback{
+    right: 12%;
+  }
+  .swipe .panel.current{
+    right: 12%;
+  }
+  .swipe{
+    margin-top: -68%;
+    transition: all 1s ease-in;
+  }
+  .panel .swipetext{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    padding: 5%;
+    right:400px;
+    z-index: 999;
+    margin-top: -120px;
+    transition: all 1s ease-in;
+  }
+  .contactdivtext{
+    position: absolute;
+    right: 420px;
+    z-index: 999;
+    width: 100%;
+    height: 400px;
+    margin-top: -450px;
+    z-index: 1;
+  }
+}
+@media(max-width: 1100px){
+  .aboutdivtext{
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    width: 450px;
+    height: 100%;
+    margin-top: -300px;
+    overflow: hidden;
+  }
+}
+@media(max-width: 1050px){
+  .panel .swipetext{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    padding: 5%;
+    right:350px;
+    z-index: 999;
+    margin-top: -160px;
+    transition: all 1s ease-in;
+  }
+  .contactdivtext{
+    position: absolute;
+    right: 450px;
+    z-index: 999;
+    width: 100%;
+    height: 400px;
+    margin-top: -450px;
+    z-index: 1;
+  }
+}
+@media(max-width: 1000px){
+  .bar .menu{
+    left: 20%;
+    z-index: 1;
+  }
+  .bar .menu2.active,.bar .menu4.active,.bar .menu5.active,.bar .menu6.active,.bar .menu61.active,.bar .menu7.active,.bar .menu8.active,.bar .menu9.active,.bar .menu10.active,.bar .menu10.active,.bar .menu11.active{
+    left: 0;
+    z-index: 2;
+    width: 100%;
+  }
+  .bar .menu34.active,.bar .menu39.active,.bar .menu310.active{
+    left: 0;
+    z-index: 3;
+    width: 100%;
+  }
+  .bar .sanatcisubdiva.active,.bar .sanatcisubdivb.active,.bar .sanatcisubdivc.active,.bar .sanatcisubdivcc.active,
+  .bar .sanatcisubdivd.active,.bar .sanatcisubdive.active,.bar .sanatcisubdivf.active,.bar .sanatcisubdivg.active,
+  .bar .sanatcisubdivh.active,.bar .sanatcisubdivi.active,.bar .sanatcisubdivii.active,.bar .sanatcisubdivj.active,
+  .bar .sanatcisubdivk.active,.bar .sanatcisubdivl.active,.bar .sanatcisubdivm.active,.bar .sanatcisubdivn.active,
+  .bar .sanatcisubdivo.active,.bar .sanatcisubdivoo.active,.bar .sanatcisubdivp.active,.bar .sanatcisubdivr.active,
+  .bar .sanatcisubdivq.active,.bar .sanatcisubdivs.active,.bar .sanatcisubdivss.active,.bar .sanatcisubdivt.active,
+  .bar .sanatcisubdivu.active,.bar .sanatcisubdivuu.active,.bar .sanatcisubdivv.active,.bar .sanatcisubdivw.active,
+  .bar .sanatcisubdivx.active,.bar .sanatcisubdivy.active,.bar .sanatcisubdivz.active {
+    left: 0;
+    z-index: 4;
+    width: 100%;
+  }
+  .bar .backmenu{
+    display: block;
+  }
+  .imageindex img{
+    height: 380px;
+  }
+  .imageindex .imageindextext{
+    top: 400px;
+    height: 150px;
+    width: 350px;
+  }
+  .swipe .panel{
+    right: 8%;
+  }
+  .swipe .panel.currentback{
+    right: 8%;
+  }
+  .swipe .panel.current{
+    right: 8%;
+  }
+  .swipe{
+    margin-top: -72%;
+    transition: all 1s ease-in;
+  }
+  .bigcard .card{
+    width: 97%;
+    height: 300px;
+  }
+  .bigcard .card .cardimage img{
+    height: 300px;
+  }
+  .bigcard .card .bigcardtext{
+    top: 250px;
+  }
+  .aboutdivtext{
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    width: 350px;
+    height: 100%;
+    margin-top: -300px;
+    overflow: hidden;
+  }
+  .contactdivtext{
+    position: absolute;
+    right: 500px;
+    z-index: 999;
+    width: 100%;
+    height: 400px;
+    margin-top: -450px;
+    z-index: 1;
+  }
+  .sanatcilist ul li a{
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .adreslerdiv{
+    width: 47%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+  .hakkimizdadivtext .yanyana p{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-30%);
+  }
+  .basin{
+    background-color: #efecea;
+    padding: 5%;
+    margin-top: 100px;
+  }
+  .basin input{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    border:none;
+    background-color: white;
+    height: 30px;
+    border-radius: 10px;
+    padding: 1%;
+  }
+  .basin textarea{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    border:none;
+    background-color: white;
+    height: 150px;
+    border-radius: 10px;
+    padding: 1%;
+  }
+  .basin p{
+    margin-left: 10%;
+    font-family: "Big Caslon";
+    font-size: 20px;
+  }
+  .basin button{
+    border-radius: 10px;
+    border: none;
+    background:white;
+    width: 20%;
+    float: right;
+    margin-right: 25%;
+  }
+  .basin h4{
+    color: #1c4483;
+    font-family: "Big Caslon";
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }
+  .basin .dropzone{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .basin select{
+    width: 80%;
+    margin-left: 10%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+  }
+}
+@media(max-width: 990px){
+  .footer{
+    height: 900px;
+  }
+  .upfooter .hizmetlerimiz{
+    width: 49%;
+  }
+  .upfooter .hakkimizda{
+    width: 49%;
+  }
+  .upfooter .iletisim{
+    width: 90%;
+  }
+  .sssdivtext{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 2%;
+  }
+}
+@media(max-width: 950px){
+  .sayac h2{
+    font-size: 40px;
+  }
+  .sayac label{
+    font-size: 20px;
+  }
+  .sayac h2 span{
+    font-size: 20px;
+  }
+  .swipe .panel{
+    right: 5%;
+  }
+  .swipe .panel.currentback{
+    right: 5%;
+  }
+  .swipe .panel.current{
+    right: 5%;
+  }
+  .swipe{
+    margin-top: -78%;
+    transition: all 1s ease-in;
+  }
+}
+@media(max-width: 920px){
+  .panel .swipetext{
+    position: absolute;
+    width: 700px;
+    height: 250px;
+    background-color: white;
+    padding: 5%;
+    right:50px;
+    z-index: 999;
+    margin-top: -100px;
+    transition: all 1s ease-in;
+  }
+  .button-next{
+    margin-top: 680px;
+    right: 50px;
+  }
+  .button-back{
+    margin-top: 680px;
+    right: 200px;
+  }
+  .slidercount{
+    margin-top: 675px;
+    right: 125px;
+  }
+}
+@media(max-width: 900px){
+  .swipe .panel img{
+    width: 80%;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 100px;
+  }
+  .swipe .panel.current img{
+    width: 80%;
+    height: 350px;
+    transition: all 1.5s ease-in;
+    margin-left: 100px;
+  }
+  .swipe{
+    margin-top: -83%;
+    transition: all 1s ease-in;
+  }
+  .panel .swipetext{
+    position: absolute;
+    width: 550px;
+    height: 250px;
+    background-color: white;
+    padding: 5%;
+    right:100px;
+    z-index: 999;
+    margin-top: -50px;
+    transition: all 1s ease-in;
+  }
+  .contactdiv{
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+    clip-path: polygon(95% 0 , 0 0 , 0% 100% , 85% 100%);
+    z-index: -1;
+    overflow: hidden;
+    transition: all 1s ease-in;
+  }
+  .aboutdiv{
+    margin-top: 200px;
+    height: 300px;
+    width: 100%;
+    clip-path: polygon(55% 0 , 0 0 , 0% 100% , 45% 100%);
+    z-index: -1;
+    overflow: hidden;
+    transition: all 1s ease-in;
+  }
+  .aboutdivtext{
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    width: 340px;
+    height: 100%;
+    margin-top: -280px;
+    overflow: hidden;
+  }
+  .contactdivtext{
+    position: absolute;
+    right: 1000px;
+    z-index: 999;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    z-index: 1;
+  }
+  .contactleft{
+    width: 80%;
+    max-height: 600px;
+    padding: 1%;
+    position: absolute;
+    margin-left: 950px;
+  }
+  .fixeddiv{
+    margin-top: 680px;
+    height: 300px;
+    background: url("image/fixed.jpg") fixed;
+    width: 100%;
+    object-fit: cover;
+  }
+  .hakkimizdadiv{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 150px;
+    background-color: #efecea;
+    margin-top: 250px;
+  }
+  .hakkimizdadivimg img{
+    width: 95%;
+    margin-top: -200px;
+    position: absolute;
+    left: 0;
+    height: 250px;
+    object-fit: cover;
+    clip-path: polygon(100% 0 , 0 0 , 0% 100% , 90% 100%);
+  }
+  .hakkimizdadivimg h2{
+    color: #1c4483;
+    font-family: "Big Caslon";
+    font-size: 60px;
+    position: absolute;
+    left: 10%;
+    margin-top: 50px;
+  }
+  .hakkimizdadivimg h4{
+    color: #1c4483;
+    font-family: "Big Caslon";
+    font-size: 40px;
+    position: absolute;
+    left: 10%;
+    margin-top: 50px;
+  }
+  .hakkimizdadivtext{
+    margin-top: 50px;
+    padding: 5%;
+  }
+  .fotografyukle{
+
+    margin-top: 100px;
+  }
+  .fotografyukle input{
+    border: none;
+    width: 80%;
+    margin-left: 10%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1%;
+  }
+  .fotografyukle p{
+    margin-left: 10%;
+    width: 80%;
+    font-size: 18px;
+    font-family:"Big Caslon";
+    color: #1c4483;
+    margin-top: 20px;
+  }
+  .fotografyukle textarea{
+   border: none;
+   width: 80%;
+   margin-left: 10%;
+   height: 100px;
+   margin-top: 20px;
+   border-radius: 10px;
+   padding: 1%;
+ }
+ .fotografyukle .dropzone{
+  width: 80%;
+  margin-left: 10%;
+}
+.fotografyukle .gndr{
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  float: right;
+  width: 200px;
+}
+.searchdivtext{
+  background-color: white;
+  margin-top: 50px;
+  padding: 3%;
+  width: 95%;
+  margin-left: 2.5%;
+}
+}
+@media(max-width: 820px){
+ .swipe .panel img{
+  width: 70%;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 200px;
+}
+.swipe .panel.current img{
+  width: 70%;
+  height: 300px;
+  transition: all 1.5s ease-in;
+  margin-left: 200px;
+}
+.swipe{
+  margin-top: -90%;
+  transition: all 1s ease-in;
+}
+.panel .swipetext{
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  padding: 5%;
+  right:70px;
+  z-index: 999;
+  margin-top: -50px;
+  transition: all 1s ease-in;
+}
+.button-next{
+  margin-top: 630px;
+  right: 50px;
+}
+.button-back{
+  margin-top: 630px;
+  right: 200px;
+}
+.slidercount{
+  margin-top: 625px;
+  right: 125px;
+}
+}
+@media(max-width: 780px){
+  .mailmessage{
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  background: #fff;
+  font-family: "Big Caslon";
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 2%;
+}
+  .sayac h2{
+    font-size: 35px;
+  }
+  .sayac label{
+    font-size: 18px;
+  }
+  .sayac h2 span{
+    font-size: 18px;
+  }
+  .smallcarddiv .smallcard{
+    width: 88%;
+    overflow: hidden;
+    background-color:#efecea;
+    height: 350px;
+    padding: 6%;
+    float: left;
+    margin-left: 6%;
+    margin-bottom: 100px;
+  }
+  .sanatcilist ul{
+    width: 100%;
+  }
+  .sanatcilist ul li a{
+    margin-left: 25%;
+  }
+  .adreslerdiv{
+    width: 97%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+}
+@media(max-width: 770px){
+  .sssdivtext{
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 2%;
+  }
+  .hakkimizdadivtext .yanyana p{
+    width: 80%;
+    margin-left: 30%;
+    transform: translateX(-30%);
+  }
+}
+@media (max-width: 750px){
+  .adres{
+    margin-top: 380px;
+  }
+  .contactheader{
+    display: none;
+  }
+  .input-search{
+    margin-left: 50px;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 250px;
+
+  }
+  .input-search:focus{
+    width: 250px;
+  }
+  .indextext{
+    width: 90%;
+  }
+  .indextext label{
+    font-size: 22px;
+  }
+  .swipe{
+    margin-top: -100%;
+    transition: all 1s ease-in;
+  }
+  .swipe .panel img{
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 250px;
+  }
+  .swipe .panel.current img{
+    width: 60%;
+    height: 250px;
+    transition: all 1.5s ease-in;
+    margin-left: 250px;
+  }
+  .panel .swipetext{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    padding: 5%;
+    right:110px;
+    z-index: 999;
+    margin-top: -50px;
+    transition: all 1s ease-in;
+  }
+  .contactdiv{
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+    clip-path: polygon(90% 0 , 0 0 , 0% 100% , 80% 100%);
+    z-index: -1;
+    overflow: hidden;
+    transition: all 1s ease-in;
+  }
+  .aboutdiv{
+    margin-top: 500px;
+    height: 300px;
+    width: 100%;
+    clip-path: polygon(90% 0 , 0 0 , 0% 100% , 80% 100%);
+    z-index: -1;
+    overflow: hidden;
+    transition: all 1s ease-in;
+  }
+  .aboutdivtext{
+    position: absolute;
+    left: 50;
+    z-index: 999;
+    width: 450px;
+    height: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .fixeddiv{
+    margin-top: 640px;
+    height: 300px;
+    background: url("image/fixed.jpg") fixed;
+    width: 100%;
+    object-fit: cover;
+  }
+  .fixeddivtext{
+    position: absolute;
+    background-color: red;
+    width: 500px;
+    height: 400px;
+    left: 50px;
+    margin-top: 350px;
+    background-color: white;
+    padding: 2%;
+  }
+  .smallcarddiv .smallcard{
+    width: 88%;
+    overflow: hidden;
+    background-color:#efecea;
+    height: 350px;
+    padding: 6%;
+    float: left;
+    margin-left: 6%;
+  }
+  .smallcarddiv .smallcard.current{
+    width: 88%;
+    overflow: hidden;
+    background-color:#efecea;
+    height: 350px;
+    padding: 6%;
+    float: left;
+    margin-left: 6%;
+    margin-top: 200px;
+  }
+  .footer{
+    margin-top: 350px;
+  }
+  .contactleft{
+    width: 100%;
+    max-height: 600px;
+    padding: 1%;
+    position: absolute;
+    margin-left: 900px;
+  }
+  #logo{
+    display: none;
+  }
+  .sanatcidivtext{
+    margin-bottom: -340px;
+  }
+  .adres{
+   margin-bottom: -340px;
+ }
+ .fotografyukle{
+  margin-top: 50px ;
+  margin-bottom: -340px;
+}
+.sssdiv{
+  margin-top: 50px;
+  margin-bottom: -340px;
+}
+.sanatcidivtext{
+  margin-bottom: -340px;
+}
+.hakkimizdadivtext{
+  margin-bottom: -340px;
+}
+.kisiselveriler{
+  margin-bottom: -340px;
+}
+.searchanadiv{
+  margin-bottom: -340px;
+}
+.basin{
+  margin-top: 400px;
+  margin-bottom: -300px;
+}
+.owl-carousel{
+  margin-top: 480px;
+  margin-bottom: -340px;
+}
+#iyzipay-checkout-form{
+  margin-top:400px;
+  margin-bottom:-300px;
+}
+.basin input{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom: 20px;
+  border:none;
+  background-color: white;
+  height: 30px;
+  border-radius: 10px;
+  padding: 1%;
+}
+.basin textarea{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom: 20px;
+  border:none;
+  background-color: white;
+  height: 150px;
+  border-radius: 10px;
+  padding: 1%;
+}
+.basin p{
+  margin-left: 2.5%;
+  font-family: "Big Caslon";
+  font-size: 20px;
+}
+.basin button{
+  border-radius: 10px;
+  border: none;
+  background:white;
+  width: 40%;
+  float: right;
+  margin-right: 5%;
+}
+.basin h4{
+  color: #1c4483;
+  font-family: "Big Caslon";
+  margin-left: 2.5%;
+  margin-bottom: 20px;
+}
+.basin .dropzone{
+  width: 95%;
+  margin-left: 2.5%;
+}
+.basin select{
+  width: 95%;
+  margin-left: 2.5%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+}
+@media(max-width: 680px){
+  .swipe{
+    margin-top: -110%;
+    transition: all 1s ease-in;
+  }
+  .swipe .panel img{
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 300px;
+  }
+  .swipe .panel.current img{
+    width: 60%;
+    height: 250px;
+    transition: all 1.5s ease-in;
+    margin-left: 300px;
+  }
+  .panel .swipetext{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    padding: 5%;
+    right:60px;
+    z-index: 999;
+    margin-top: -50px;
+    transition: all 1s ease-in;
+  }
+}
+@media(max-width: 600px){
+  .swipe{
+    margin-top: -120%;
+    transition: all 1s ease-in;
+  }
+  .swipe .panel img{
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 300px;
+  }
+  .swipe .panel.current img{
+    width: 60%;
+    height: 250px;
+    transition: all 1.5s ease-in;
+    margin-left: 300px;
+  }
+  .fixedfooter{
+    height: 100px;
+    padding: 3%;
+  }
+  .fixedfooter a{
+    float: left;
+  }
+}
+@media(max-width: 580px){
+  .swipe{
+    margin-top: -130%;
+    transition: all 1s ease-in;
+  }
+  .swipe .panel img{
+    width: 55%;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 340px;
+  }
+  .swipe .panel.current img{
+    width: 55%;
+    height: 250px;
+    transition: all 1.5s ease-in;
+    margin-left: 340px;
+  }
+  .panel .swipetext{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    padding: 5%;
+    right:40px;
+    z-index: 999;
+    margin-top: -50px;
+    transition: all 1s ease-in;
+  }
+  .fixeddivtext{
+    width: 350px;
+  }
+  .contactleft{
+    width: 100%;
+    max-height: 600px;
+    padding: 1%;
+    position: absolute;
+    margin-left: 950px;
+  }
+}
+@media(max-width: 530px){
+ .swipe{
+  margin-top: -140%;
+  transition: all 1s ease-in;
+}
+.swipe .panel img{
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+  margin-left: 380px;
+}
+.swipe .panel.current img{
+  width: 50%;
+  height: 250px;
+  transition: all 1.5s ease-in;
+  margin-left: 380px;
+}
+.panel .swipetext{
+  position: absolute;
+  width: 380px;
+  height: 300px;
+  background-color: white;
+  padding: 5%;
+  right:30px;
+  z-index: 999;
+  margin-top: -50px;
+  transition: all 1s ease-in;
+}
+.aboutdivtext{
+  position: absolute;
+  left: 50;
+  z-index: 999;
+  width: 350px;
+  height: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.footer{
+  margin-top: 450px;
+  height: 900px;
+}
+.sanatcidivtext{
+  margin-bottom: -440px;
+}
+}
+@media(max-width: 490px){
+ .swipe{
+  margin-top: -150%;
+  transition: all 1s ease-in;
+}
+.swipe .panel img{
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+  margin-left: 400px;
+}
+.swipe .panel.current img{
+  width: 50%;
+  height: 250px;
+  transition: all 1.5s ease-in;
+  margin-left: 400px;
+}
+.panel .swipetext{
+  position: absolute;
+  width: 380px;
+  height: 300px;
+  background-color: white;
+  padding: 5%;
+  right:10px;
+  z-index: 999;
+  margin-top: -50px;
+  transition: all 1s ease-in;
+}
+}
+/****************************media*********************************************/
